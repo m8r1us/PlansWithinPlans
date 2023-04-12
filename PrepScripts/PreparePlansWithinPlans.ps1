@@ -1,7 +1,7 @@
     <#
     .SYNOPSIS
 
-        PreparePlansWithInPlans
+        PreparePlansWithinPlans
 
         Author: Marius Elmiger, scip AG
         Version: 0.4
@@ -9,14 +9,14 @@
 
     .DESCRIPTION
 
-        The PreparePlansWithInPlans script encrypts the instruction files and the executables that can later be executed on a victim machine.
+        The PreparePlansWithinPlans script encrypts the instruction files and the executables that can later be executed on a victim machine.
         This tool was created for the article "An Exploration of AV Evasion Techniques" which you can find at https://www.scip.ch/en/?labs.20230413. 
         The script was made for educational reasons to demonstrate basic evasion techniques.
          
   
     .EXAMPLE
         
-        ..\PrepScripts\PreparePlansWithInPlans.ps1
+        ..\PrepScripts\PreparePlansWithinPlans.ps1
     #>
 
 # Define the encryption key
@@ -52,7 +52,7 @@ function RC4 ($key, $data) {
 
 # Build the Golden Path for the program
 
-$scriptsToEncrypt = "PlansWithInPlans1.ps1,PlansWithInPlans2.ps1,PlansWithInPlans3.ps1"
+$scriptsToEncrypt = "PlansWithinPlans1.ps1,PlansWithinPlans2.ps1,PlansWithinPlans3.ps1"
 $scriptsToEncrypt = $scriptsToEncrypt.split(",")
 
 $results = foreach ($scriptToEncrypt in $scriptsToEncrypt) {
