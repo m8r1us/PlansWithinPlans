@@ -1,4 +1,4 @@
-# Plans With In Plans
+# Plans Within Plans
 This tool was created for the article [An Exploration of AV Evasion Techniques ](https://www.scip.ch/en/?labs.20230413). The script was made for educational reasons to demonstrate basic evasion techniques.
 
 The tool explores a range of techniques an attacker could utilize to avoid detection while leveraging PowerShell. Gaining insight into these potential evasion methods and their functionality can assist defenders in understanding the constraints of monitoring PowerShell and consequently strengthening their defenses. The presented evasion techniques are not novel, and therefore, a modern Endpoint Detection and Response (EDR) system may flag the techniques as malicious.
