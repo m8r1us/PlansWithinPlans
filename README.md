@@ -13,8 +13,8 @@ The tool explores a range of techniques an attacker could utilize to avoid detec
 ..* Whenever you change something in PlansWithInPlans1 or PlansWithInPlans2, or PlansWithInPlans3 you must run the PreparePlansWithinPlans.ps1 again to create an updated data.txt
 4. If you changed the executable names in the PlansWithInPlans3.ps1 file, rename the encrypted *.txt files accordingly.
 ..* e.g. SharpHound.exe-readme.txt -> readme1.txt
-5. Transfer the files in the root folder to the victim. In our example: data.txt, etw.exe.txt, Seatb.exe.txt, Sharph.exe.txt, PrivCheck.ps1.txt
-6. Run the PlansRunner.ps1 script on the victims machine
+5. Transfer the files in the root folder to the target machine. In our example: data.txt, etw.exe.txt, Seatb.exe.txt, Sharph.exe.txt, PrivCheck.ps1.txt
+6. Run the PlansRunner.ps1 script on the target machine
 
 If the PowerShell execution policy is not restricted 
 ```Powershell
